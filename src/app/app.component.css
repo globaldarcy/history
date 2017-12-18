@@ -1,0 +1,19 @@
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+div {
+  flex: 1;
+  /*height: 100%;*/
+  background-color: #eeeeee;
+}
+
+div:first-child {
+  background-color: lightseagreen;
+}
+
+div:last-child {
+  background-color: lightslategrey;
+}

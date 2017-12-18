@@ -1,0 +1,4 @@
+<div class="header">
+  <button (click)="undo()" [class.disabled]="!canUndo">{{all.length}} Undo</button>
+  <button (click)="redo()" [class.disabled]="!canRedo">Redo {{_currentIndex}}</button>
+</div>

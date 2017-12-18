@@ -3,16 +3,27 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { LeftBarComponent } from './components/left-bar/left-bar.component';
+import { ContentComponent } from './components/content/content.component';
+import { RightBarComponent } from './components/right-bar/right-bar.component';
+import { HeaderComponent } from './components/header/header.component';
+import {ServicesService} from './services.service';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LeftBarComponent,
+    ContentComponent,
+    RightBarComponent,
+    HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ServicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
