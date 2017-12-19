@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-header [all]="allLists" [count]="allCount"></app-header>
+<app-header [all]="allLists" [count]="allLists.length" [currentIndex]="allLists.length - 1"></app-header>
 <div class="container">
   <div><app-left-bar [list]="allLists" (change)="countChange()"></app-left-bar></div>
   <div><app-content></app-content></div>

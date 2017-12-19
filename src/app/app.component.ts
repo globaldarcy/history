@@ -14,7 +14,7 @@ export class AppComponent {
     // console.log(this.allCount);
   }
   constructor() {
-    this.allCount = this.allLists.length;
+    //this.allCount = this.allLists.length;
   }
 
 }
