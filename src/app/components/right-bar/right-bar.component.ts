@@ -24,7 +24,8 @@ export class RightBarComponent implements OnInit {
       name: '这是一条new信息'
     });
     this.list.push({
-      id: `right-${this._length}`
+      id: `right-${this._length}`,
+      name: '这是一条new信息'
     });
     this.change.emit(this.list);
   }

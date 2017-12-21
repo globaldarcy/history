@@ -1,7 +1,7 @@
 <div style="text-align: center">
-  <a class="btn" href="javascript:void(0);" (click)="add()">Add {{leftList.length}}</a>
+  <a class="btn" href="javascript:void(0);" (click)="add(foo)">Add {{leftList.length}}</a>
 </div>
-<ol>
+<ol #foo>
   <li *ngFor="let list of leftList">{{list.name}} === {{list.id}}</li>
 </ol>
 
